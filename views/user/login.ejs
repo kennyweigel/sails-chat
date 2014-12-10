@@ -1,0 +1,12 @@
+<h1>Login</h1>
+<form method="POST" action="/user/authenticate">
+	<label>Name:</label>
+	<input name="name" type="text"/>
+	<br>
+	<label>Password:</label>
+	<input name="password" type="text"/>
+  <br>
+  <div><% if (error) { %><%= error %><% } %></div>
+  <br>
+  <input type="submit"/>
+</form>
